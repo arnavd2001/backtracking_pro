@@ -1,0 +1,37 @@
+HP_CHAIN: PPPPPPPPHHHHHHHHHHHHHHHHPPPPPPPPPPPPPHHHHHHHHHHHHHPPPPPPPPPPPPPPPPHHHHHHHHHHHHHHHHPPPPPPPPPPPPPHHHHHHHHHHHHH
+
+CYCLES: 10
+N_ANTS: 250
+ACO_ALPHA: 3
+ACO_BETA: 1
+ACO_EVAPORATION: 0.95
+LS_FREQUENCY: 5
+
+EXCHANGED_ANTS: 5
+
+RANDOM_SEED: 72
+
+STRUCTURE_FILENAME: output.json
+
+# DESCRIPTION
+#
+# HP_CHAIN  The chain representing the protein to predict.
+#
+# CYCLES           Number of cycles of the optimization algorithms.
+# N_ANTS           Number of ants in the ant colony
+# ACO_ALPHA        Parameter 'alpha' of the ACO algorithm, which represents the weight of the pheromones in each ant's decision.
+#                    The base for ACO_ALPHA can be a number near 0, so avoid too high values for ACO_ALPHA.
+# ACO_BETA         Parameter 'beta' of the ACO algorithm, which represents the weight of the heuristic values on ant's decision.
+#                    The base for ACO_BETA can be numbers higher than 0, so avoid too high values for ACO_BETA.
+# ACO_EVAPORATION  Evaporation rate of the pheromones in the pheromone matrix.
+#                    At each iteration, pheromones are multiplied by (1-p), where p is this parameter.
+# LS_FREQUENCY     Local Search frequency. This determines the number of times to perform local search on each
+#                    protein developed by an ant. A local search consists of randomizing one relative direction
+#                    within the protein, and checking if the resulting protein is better.
+#
+# EXCHANGED_ANTS     If running the MPI multiple colony version, how many ants should be exchanged
+#                      between nodes at every colony cycle?
+#
+# RANDOM_SEED    seed for the random number generator. If negative, seed is chosen randomly.
+#
+# STRUCTURE_FILENAME  name of the file where to output the structure information of the protein predicted.
