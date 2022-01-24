@@ -13,7 +13,7 @@ using namespace std;
 
 /** Tests ACOSolution. */
 void test_aco_solution(){
-	cout << "\n== ACOSolution ==\n";
+	cout << "\n== Ant Colony Optimisation Solution ==\n";
 
 	vector<vec3<int>> prev({
 			{1,0,0},{-1,0,0},
